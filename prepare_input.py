@@ -22,7 +22,7 @@ def prepare_input(input_fname, output_fname, output_dir="."):
 
 	#save as h5 formate 
 	save_path = os.path.join(output_dir, output_fname) + '.hdf5'
-	hf = h5py.File(save_path, 'a')ls
+	hf = h5py.File(save_path, 'a')
 	dset = hf.create_dataset('im', data=im_new)
 	hf.close()
 
