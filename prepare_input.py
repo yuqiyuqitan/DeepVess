@@ -29,6 +29,6 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description = "prepare data for deepVess")
 	parser.add_argument('input_fname', type = str)
 	parser.add_argument('output_fname', type = str)
-	parser.add_arguments('output_dir', type = str)
+	parser.add_argument('output_dir', type = str)
 	args = parser.parse_args()
 	prepare_input(args.input_fname, args.output_fname, args.output_dir)
