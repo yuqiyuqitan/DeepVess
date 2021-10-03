@@ -171,6 +171,5 @@ dependencies:
     - idna==3.2
     - pysocks==1.7.1
     - requests==2.26.0
-    - topologylayer==0.0.0
     - urllib3==1.26.7
 prefix: /home/tany/.conda/envs/deepvess
