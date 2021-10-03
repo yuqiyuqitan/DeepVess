@@ -285,6 +285,6 @@ if isForward:
     hf = h5py.File(fn,'a')
     dset = hf.create_dataset('V',data=np.transpose(np.reshape(V, imShape[0:3]), (2, 1, 0)))
     hf.close()
-    io.savemat(fn, {'V': np.transpose(np.reshape(V, imShape[0:3]), (2, 1, 0))})
+    #io.savemat(fn, {'V': np.transpose(np.reshape(V, imShape[0:3]), (2, 1, 0))})
     print(fn + '- is saved.')
 
