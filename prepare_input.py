@@ -17,6 +17,7 @@ def prepare_input(input_fname, output_fname, output_dir="."):
 	p_min, p_max = np.percentile(im, (1,98))
 	im_new = exposure.rescale_intensity(im, in_range = (p_min, p_max), 
 		out_range = (-0.5,0.5))
+	im_new = im_new.astype('float32')
 
 
 	#save as h5 formate 
