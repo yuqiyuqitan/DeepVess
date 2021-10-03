@@ -283,7 +283,10 @@ if isForward:
     V = (V > (len(I) ** 2 // 2))
     fn = inputData[:-3] + "-epoch" + str(nEpoch) + '.hdf5'
     hf = h5py.File(fn,'a')
-    dset = hf.create_dataset('V',data=np.transpose(np.reshape(V, imShape[0:3]), (2, 1, 0)))
+
+    #remove the transpose and impose uint8 type
+    dset = hf.create_dataset('V',data=np.reshape(V, imShape[0:3]), dtype = 'uint8')
+
     hf.close()
     #io.savemat(fn, {'V': np.transpose(np.reshape(V, imShape[0:3]), (2, 1, 0))})
     print(fn + '- is saved.')
