@@ -4,7 +4,6 @@
 Additionally, The `topological loss` directory has the code and model related to the [***Topological Encoding CNN paper***](http://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Haft-Javaherian_A_Topological_Encoding_Convolutional_Neural_Network_for_Segmentation_of_3D_CVPRW_2020_paper.html).   
 
 ### How to use DeepVess
-Hi I'm Will
 
 First, see [Installing TensorFlow](https://www.tensorflow.org/get_started/os_setup.html) for instructions on how to install TensorFlow. 
 
